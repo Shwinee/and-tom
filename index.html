@@ -2,18 +2,15 @@
 <html>
     <head>
         <title>and tom</title>
-        <script>
-            $.getJSON("JasonFiles.json", function(obj){
-               $.each(obj, function(key, value) { 
-                    $("ul").append("<li>"+value.name+"</li>");
-               });
-            })
-        </script>
     </head>
     <body>
-        <audio controls>
-            <source src="Audio/8Dlofi.mp3" type="audio/mpeg">
-        </audio>
+        <script>
+            function play(song){
+                var audio = new Audio('Audio/'+song+'.mp3');
+                audio.play();
+            };
+        </script>
+        <button onclick='play("8Dlofi");'> 8D lofi </button>
+        <button onclick='play("lofi");'> lofi </button>
     </body>
-
 </html>
