@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>and tom</title>
+        <script>
+            $.getJSON("JasonFiles.json", function(obj){
+               $.each(obj, function(key, value) { 
+                    $("ul").append("<li>"+value.name+"</li>");
+               });
+            })
+        </script>
+    </head>
+    <body>
+        <audio controls>
+            <source src="Audio/8Dlofi.mp3" type="audio/mpeg">
+        </audio>
+    </body>
+
+</html>
